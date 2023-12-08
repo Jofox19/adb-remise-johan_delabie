@@ -1,0 +1,499 @@
+/* Styles généraux */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #BF7F00;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 200px;
+    /* Taille du logo réduite */
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    /* Empile les éléments verticalement */
+}
+
+
+.eC_bModi,
+.eC_bBack{
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: all 0.3s ease; 
+        margin-bottom: 5px; 
+}
+
+
+
+.eC_bModi{
+    background-color: #007bff;
+  color: #fff;
+}
+
+.eC_bBack{
+    background-color: #dc3545; 
+  color: #fff;
+}
+
+.eC_bBack:hover{
+    background-color:#74040f; 
+}
+
+.eC_bModi:hover{
+    background-color: rgb(23, 15, 135); 
+}
+
+.inscription-form,
+.login-table,
+.custom-table {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    background-color: #fff;
+    /* Couleur de fond pour le formulaire */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    transition: all 0.3s ease;
+    /* Animation de transition */
+    margin-bottom: 30px;
+    /* Espace en dessous du formulaire */
+}
+
+.inscription-form h2,
+.login-table h2,
+.custom-table h2 {
+    margin-top: 0;
+    color: #333;
+    /* Couleur du titre */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    /* Animation de transition */
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+select:hover {
+    border-color: #007bff;
+    /* Couleur de bordure au survol */
+}
+
+button,
+.custom-button,
+.logout-btn,
+.adds-btn,
+.custom-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    /* Animation de transition */
+}
+
+.signup-btn,
+.login-btn {
+    background-color: #007bff;
+    /* Couleur pour le bouton d'inscription */
+    color: #fff;
+}
+
+.return-btn,
+.logout-btn {
+    padding: 8px 20px;
+    background-color: #dc3545;
+    /* Couleur de fond pour le bouton Retour */
+    color: #fff;
+}
+
+.forgot-password {
+    color: #007bff;
+    /* Couleur pour le lien de mot de passe oublié */
+    text-decoration: underline;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.forgot-password:hover {
+    color: #345d88;
+    background-color: rgb(168, 166, 166);
+
+}
+
+.error-message {
+    color: #ff0000;
+    /* Couleur du texte d'erreur */
+    margin-bottom: 10px;
+}
+
+.login-table th,
+.login-table td,
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.login-table th,
+.custom-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.login-table tbody tr:nth-child(even),
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.login-table tr:hover,
+.custom-table tr:hover {
+    background-color: #ddd;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logout-btn,
+.adds-btn,
+.custom-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.adds-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-btn {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.custom-btn:hover {
+    background-color: #e0a800;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #007bff;
+    color: white;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.custom-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Ajout des styles pour les boutons dans les tables */
+.login-table .custom-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.login-table .logout-btn,
+.login-table .adds-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.login-table .logout-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.login-table .adds-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.login-table .logout-btn:hover,
+.login-table .adds-btn:hover {
+    opacity: 0.8;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #BF7F00;
+    /* Couleur de fond pour la page */
+    /* Image de fond */
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 200px;
+    /* Taille du logo réduite */
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles pour la table */
+.lC_tList {
+    width: 100%; /* Le tableau prend toute la largeur disponible */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.lC_tList th,
+.lC_tList td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #FF9B85;
+    color: white;
+}
+
+.lC_tList th {
+    background-color: #60D394;
+}
+
+/* Styles pour les boutons et liens */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Met les boutons dans une colonne */
+    margin-bottom: 20px;
+}
+
+.lC_bCreate {
+    width: 20%;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lC_bImp {
+    width: 20%;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c6daf;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lC_bDisc {
+    width: 20%;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(160, 25, 25);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lC_bDel {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lC_bDel:hover {
+    background-color: #0a4584;
+    color: #fff;
+}
+
+.lC_bCreate:hover {
+    background-color: rgb(6, 75, 32);
+    color: #fff;
+}
+
+.lC_bImp:hover {
+    background-color: rgb(15, 4, 140);
+    color: #fff;
+}
+
+.lC_bDisc:hover {
+    background-color: #48081f;
+    color: #fff;
+}
+
+.ad_fCon {
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.ad_eCon {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+button {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ad_bBack {
+    background-color: #dc3545;
+    margin-top: 10px;
+}
+
+small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.ad_bCrea,
+.ad_bBack {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.ad_bCrea:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.ad_bBack:hover {
+    background-color: #8c0437;
+    color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+    .adds_form {
+        width: 80%;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"],
+    button {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
